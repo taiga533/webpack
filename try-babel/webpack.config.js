@@ -11,25 +11,7 @@ module.exports = {
             {
                 test: /\.js$/,
                 exclude: /(node_modules|bower_components)/,
-                use: [
-                    {
-                        loader: "babel-loader",
-                        options: {
-                            presets: [
-                                ["@babel/preset-env", {
-                                useBuiltIns: "usage",
-                                corejs: 3,
-                                targets: {
-                                    browsers: [
-                                    "last 1 Chrome version",
-                                    "ie 11",
-                                ]
-                                },
-                            }]
-                            ]
-                        }
-                    }
-                ]
+                use: ["babel-loader"]
             }
         ]
     },
