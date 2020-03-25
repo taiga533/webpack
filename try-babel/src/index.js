@@ -1,9 +1,9 @@
 class Dog {
     constructor(name) {
-        this.name = name
+        this._name = name
     }
     get name() {
-        return this.name + "だワン！"
+        return this._name + "だワン！"
     }
 }
 window.onload = () => {
