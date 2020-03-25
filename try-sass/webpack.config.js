@@ -5,16 +5,7 @@ module.exports = {
     mode: // try-dev-serverと同じ設定を書く
     entry: // try-dev-serverと同じ設定を書く
     module: {
-        rules: [
-            {
-                test: /\.scss$/,
-                use: [
-                    'style-loader',
-                    'css-loader',
-                    'sass-loader'
-                ]
-            }
-        ]
+        rules: []
     },
     devServer: {
         contentBase: path.join(__dirname, 'dist'),
